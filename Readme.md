@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Елена Волкова](https://up.htmlacademy.ru/adaptive/24/user/185171).
-* Наставник: `Неизвестно`.
+* Наставник: [Artem Ryzhov](https://htmlacademy.ru/profile/id1387905).
 
 ---
 
