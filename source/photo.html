@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -17,22 +19,22 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="index.html">
+                <a class="main-nav__link" href="index.html">
                   Главная
                 </a>
               </li>
               <li class="main-nav__item main-nav__item--active">
-                <a>
+                <a class="main-nav__link">
                   Фотографии
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html">
+                <a class="main-nav__link" href="form.html">
                   Конкурс
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
+                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
                   HTML Academy
                 </a>
               </li>
@@ -43,9 +45,12 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title">Фотографии пользователей</h1>
+      <div class="promo">
+        <div class="promo__block promo-block--inner">
+          <h1 class="main__title">Фотографии пользователей</h1>
+        </div>
+      </div>
       <p class="text-intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-
       <section class="panorama">
         <h2 class="panorama__label">Панорама дня</h2>
         <a class="panorama__link" href="#">
@@ -134,8 +139,8 @@
       </section>
 
       <div class="intro">
-        <p class="text-intro">Затмите их всех!</p>
-        <p class="text-intro">Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="intro__text text-intro">Затмите их всех!</p>
+        <p class="intro__text text-intro">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
 
       <form class="new-photo" action="https://echo.htmlacademy.ru" method="post">
@@ -164,7 +169,7 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <a class="footer__logo logo">
-            <img class="logo__image" src="img/logo-footer.svg" width="74" height="23" alt="Логотип приложения Pink">
+            <img class="logo__image" src="img/logo-footer.svg" width="145" height="40" alt="Логотип приложения Pink">
           </a>
           <div class="footer__social social">
             <ul class="social__list">
