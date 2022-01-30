@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper wrapper">
         <a class="header__logo logo">
           <img class="logo__image" src="img/logo-header.svg" width="74" height="23" alt="Логотип приложения Pink">
         </a>
@@ -17,22 +19,22 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
-                <a>
+                <a class="main-nav__link">
                   Главная
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="photo.html">
+                <a class="main-nav__link" href="photo.html">
                   Фотографии
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html">
+                <a class="main-nav__link" href="form.html">
                   Конкурс
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
+                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
                   HTML Academy
                 </a>
               </li>
@@ -46,9 +48,11 @@
       <h1 class="visually-hidden">Pink - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
 
       <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="main__title">Взгляните на жизнь иначе!</h2>
-          <img src="img/app-image.png" alt="Изображение приложения в розовом цвете">
+        <div class="promo__wrapper wrapper">
+          <div class="promo__block">
+            <h2 class="promo__title main__title">Взгляните на жизнь иначе!</h2>
+            <img src="img/app-image.png" alt="Изображение приложения в розовом цвете">
+          </div>
           <a class="promo__button" href="#">Скачать приложение</a>
           <ul class="promo__list download">
             <li class="download__item">
@@ -72,10 +76,12 @@
       </section>
 
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="advantages__wrapper wrapper">
           <h2 class="visually-hidden">Преимущества приложения Pink</h2>
-          <p class="advantages__title main__title">Устали от серости мегаполиса?</p>
-          <p class="main__title">Нам есть, что вам предложить!</p>
+          <div class="advantages__intro">
+            <p class="advantages__title main__title">Устали от серости мегаполиса?</p>
+            <p class="main__title">Нам есть, что вам предложить!</p>
+          </div>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__name">Поднимает настроение</h3>
@@ -95,7 +101,7 @@
       </section>
 
       <section class="research">
-        <div class="research__wrapper">
+        <div class="research__wrapper wrapper">
           <h2 class="visually-hidden">Данные исследований</h2>
           <p class="research__title">Эффект на 24 часа!</p>
           <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -104,7 +110,7 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper wrapper">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
           <div class="reviews__list">
             <blockquote class="reviews__item">
@@ -115,23 +121,23 @@
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
-          <p class="reviews__toggles">
-            <button class="reviews__toggle reviews__toggle--current" type="button">1</button>
-            <button class="reviews__toggle" type="button">2</button>
-            <button class="reviews__toggle" type="button">3</button>
+          <p class="reviews__toggles slider">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__slider" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
       </section>
 
       <section class="tariffs">
-        <div class="tariffs__wrapper">
+        <div class="tariffs__wrapper wrapper">
           <h2 class="visually-hidden">Описание тарифов</h2>
           <table class="tariffs__table">
             <tr class="tariffs__header">
               <th><span class="visually-hidden">Название и цена тарифа</span></th>
-              <th class="tariffs__name">База<br>1,99 USD</th>
-              <th class="tariffs__name">Стандарт<br>3,99 USD</th>
-              <th class="tariffs__name">Анлим<br>9,99 USD</th>
+              <th class="tariffs__name">База<br><span class="tariffs_price">1,99 USD</span></th>
+              <th class="tariffs__name">Стандарт<br><span class="tariffs_price">3,99 USD</span></th>
+              <th class="tariffs__name">Анлим<br><span class="tariffs_price">9,99 USD</span></th>
             </tr>
             <tr>
               <td class="tariffs__feature">Розовый фильтр</td>
@@ -152,23 +158,28 @@
               <td class="tariffs__feature-yes"><span class="visually-hidden">Комментарии - есть</span></td>
             </tr>
           </table>
+          <p class="tariffs__toggles slider">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__slider" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title main__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="contacts__wrapper wrapper">
+          <h2 class="main__title">Остались вопросы? Свяжитесь с нами!</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__title">Звоните:</h3>
-              <p class="contacts__text">
-                <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <p>
+                <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
               </p>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Пишите:</h3>
-              <p class="contacts__text">
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <p>
+                <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </p>
             </li>
             <li class="contacts__item">
@@ -177,15 +188,15 @@
             </li>
           </ul>
           <div class="contacts__map">
-            <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6675e7cd2b89498ac571e3ab4d4677a915fdfeffda66d193f321a90674681e2b&amp;source=constructor" style="width: 100%; height: 415px;" title="Адрес компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
+            <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6675e7cd2b89498ac571e3ab4d4677a915fdfeffda66d193f321a90674681e2b&amp;source=constructor" title="Адрес компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
           </div>
         </div>
       </section>
 
       <footer class="footer">
-        <div class="footer__wrapper">
+        <div class="footer__wrapper wrapper">
           <a class="footer__logo logo">
-            <img class="logo__image" src="img/logo-footer.svg" width="74" height="23" alt="Логотип приложения Pink">
+            <img class="logo__image" src="img/logo-footer.svg" width="145" height="40" alt="Логотип приложения Pink">
           </a>
           <div class="footer__social social">
             <ul class="social__list">
